@@ -1,8 +1,8 @@
 import zmq
 import json
 from concurrent.futures import ThreadPoolExecutor
-from .command_handler import CommandHandler
-from .logger import setup_logger
+from command_handler import CommandHandler
+from logger import setup_logger
 
 # Initialize the logger
 logger = setup_logger("server.log")
