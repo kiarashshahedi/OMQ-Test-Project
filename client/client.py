@@ -3,7 +3,7 @@ import json
 
 
 class Client:
-    def __init__(self, host="127.0.0.1", port=5555):
+    def __init__(self, host="127.0.0.1", port=1234):
         self.address = f"tcp://{host}:{port}"
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.REQ)  # REQ: Client sends requests

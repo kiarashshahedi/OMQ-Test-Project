@@ -9,7 +9,7 @@ logger = setup_logger("server.log")
 
 
 class Server:
-    def __init__(self, host="127.0.0.1", port=5555):
+    def __init__(self, host="127.0.0.1", port=1234):
         self.address = f"tcp://{host}:{port}"
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.REP)  # REP: Server responds to requests
